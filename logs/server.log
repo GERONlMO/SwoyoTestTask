@@ -1,0 +1,6 @@
+2025-04-05 07:48:20 [main] INFO  org.geronimo.server.Server - Запуск сервера...
+2025-04-05 07:48:20 [Thread-0] DEBUG org.geronimo.server.Server - Поток обработки консольных команд запущен
+2025-04-05 07:48:20 [main] INFO  org.geronimo.server.Server - Сервер запущен на порту 8080
+2025-04-05 07:50:40 [Thread-0] DEBUG org.geronimo.server.Server - Получена серверная команда: load loadData
+2025-04-05 07:50:40 [Thread-0] INFO  o.g.command.ServerCommandProcessor - Команда 'load loadData' выполнена: УСПЕХ: Данные загружены из loadData
+2025-04-05 07:50:40 [Thread-0] INFO  org.geronimo.server.Server - Результат выполнения команды: УСПЕХ: Данные загружены из loadData

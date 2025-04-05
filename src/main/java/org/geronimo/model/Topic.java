@@ -1,12 +1,15 @@
 package org.geronimo.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Topic {
     private String name;
     private Map<String, Vote> votes = new HashMap<>();
@@ -15,14 +18,12 @@ public class Topic {
     @JsonCreator
     public Topic(
             @JsonProperty("name") String name,
-            @JsonProperty("creator") String creator
+            @JsonProperty("creator") String creator,
+            @JsonProperty("votes") Map<String, Vote> votes
     ) {
         this.name = name;
         this.creator = creator;
-    }
-
-    public String getName() {
-        return name;
+        this.votes = votes != null ? votes : new HashMap<>();
     }
 
     public void addVote(Vote vote) {
@@ -37,15 +38,22 @@ public class Topic {
         return votes.remove(voteName) != null;
     }
 
+    @JsonIgnore
     public int getVotesCount() {
         return votes.size();
     }
 
-    public String getCreator() {
-        return creator;
-    }
-
+    @JsonIgnore
     public Collection<Vote> getAllVotes() {
         return votes.values();
+    }
+
+    @JsonProperty("votes")
+    public Map<String, Vote> getVotes() {
+        return votes;
+    }
+
+    public String getName() {
+        return name;
     }
 }

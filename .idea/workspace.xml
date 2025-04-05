@@ -5,22 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7bad6817-d3be-4a52-a548-f3066f732fe8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/client/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/command/CommandProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/handler/ClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/handler/ServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/model/Topic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/model/Vote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/server/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/util/DataSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/command/ClientCommandProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/command/ServerCommandProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/command/context/VoteContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/command/context/VoteCreationContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/command/handler/client/CreateHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/command/handler/client/DeleteHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/command/handler/client/ExitHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/command/handler/client/LoginHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/command/handler/client/ViewHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/command/handler/client/VoteHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/command/handler/server/ExitHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/command/handler/server/LoadDataHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/command/handler/server/SaveDataHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/util/CommandParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/util/ResponseBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ClientCommandProcessorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CommandParserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CreateHandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DataSerializerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DeleteHandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LoginHandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ResponseBuilderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ServerCommandProcessorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ViewHandlerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/VoteHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/geronimo/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/geronimo/command/CommandProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/geronimo/handler/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/handler/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/geronimo/handler/ServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/handler/ServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/geronimo/model/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/model/Topic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/geronimo/model/Vote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/model/Vote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/geronimo/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/geronimo/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +76,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RunManager" selected="Application.Server">
@@ -86,10 +109,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CommandParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SwoyoTestTask" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CommandParserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataSerializerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SwoyoTestTask" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DataSerializerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResponseBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SwoyoTestTask" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ResponseBuilderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Server" />
         <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
+        <item itemvalue="JUnit.ResponseBuilderTest" />
+        <item itemvalue="JUnit.DataSerializerTest" />
+        <item itemvalue="JUnit.CommandParserTest" />
       </list>
     </recent_temporary>
   </component>

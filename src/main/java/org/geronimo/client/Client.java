@@ -25,7 +25,10 @@ public class Client {
             while (true) {
                 System.out.print("> ");
                 String input = scanner.nextLine();
-                if ("exit".equalsIgnoreCase(input)) break;
+                if ("exit".equalsIgnoreCase(input)) {
+                    System.out.println("Завершение работы клиента...");
+                    break;
+                }
                 channel.writeAndFlush(new DatagramPacket(
                         Unpooled.copiedBuffer(input.getBytes()),
                         new InetSocketAddress("localhost", 8080)
